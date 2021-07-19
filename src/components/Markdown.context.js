@@ -7,9 +7,10 @@ export function MarkdownContextProvider({
   children,
 }) {
   const [isChanged, setIsChanged] = useState(false);
+  const [isAutoSaveChanged, setIsAutoSaveChanged] = useState(false);
 
-  const state = { isChanged };
-  const actions = { setIsChanged };
+  const state = { isChanged, isAutoSaveChanged };
+  const actions = { setIsChanged, setIsAutoSaveChanged };
 
   const context = {
     state,

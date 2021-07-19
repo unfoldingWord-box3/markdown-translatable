@@ -101,6 +101,9 @@ function BlockEditable({
       if (actions && actions.setIsChanged) {
         actions.setIsChanged(true);
       }
+      if (actions && actions.setIsAutoSaveChanged) {
+        actions.setIsAutoSaveChanged(true);
+      }
     }, [actions]
   );
 
